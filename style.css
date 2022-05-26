@@ -373,7 +373,7 @@ body{
          border: 3px solid #202020;
          border-radius: 0.4em;
          box-shadow: 0.1em 0.1em;
-         width: 40vw;
+         width: 20vw;
          left: 50%;
          top:20%;
          transform:translate(-50%, -50%);
