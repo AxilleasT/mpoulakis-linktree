@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{font-family:'Poppins', sans-serif; } 
+body{ 
+       background-color: #87CEEB; 
+       height:100%;
+    overflow: hidden;  
+      }
+   
+   .logo{ 
+       position: relative;
+        left: 50%; 
+        transform: translate(-50%);   
+       width:200px;
+       height:200px;
+   }
+   .logo {
+	-webkit-animation: roll-in-left 1.6s ease-out both;
+	        animation: roll-in-left 1.6s ease-out both;
+}
+ 
+/* @-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }*/
+  
+   .buttons{ 
+        display:flex;
+        flex-direction: column;
+    }   
+
+    button {
+        position: relative;
+        background: #45B649;
+        font-family: inherit;
+        font-weight: 900;
+        font-size: 24px;
+        color:#202020;
+        border: 3px solid #202020;
+        border-radius: 0.4em;
+        box-shadow: 0.1em 0.1em;
+        width: 20vw;
+        left: 50%;
+        top:20%;
+        transform:translate(-50%, -50%);
+        
+    }
+    
+    button:hover {
+        background: white;
+        box-shadow: 0.15em 0.15em;
+    }
+    
+    button:active {
+        box-shadow: 0.05em 0.05em;
+    }
+
+    .scene{ 
+        top:20%;
+        position:absoluteS;
+        top: -520px;
+        z-index:-2;
+    }
+   .city{ 
+        bottom:0px;
+        width:100%;
+        left:0; 
+        position:absolute;
+        object-fit: cover;
+        overflow:hidden;
+    }
+    .bmw{ 
+        z-index: 1;
+        position:absolute;
+        bottom:10PX;
+        width:30rem;
+        height:11.25; 
+        animation: car-move 20s linear backwards;
+        z-index: 1;
+    }
+    @keyframes car-move{ 
+        to { 
+            transform: translate(80vw);
+        }
+    }
+       /*.city{
+        background: url(city.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        top:-100%;
+        height: 100%;
+        width:100%;
+        position: relative ;
+        z-index: -6;
+      } */
+      
+                    /* mobile view */
+      @media only screen and (max-width: 768px) {
+        body {
+          background-color: lightblue;
+        }
+        body{ 
+            background-color: #87CEEB; 
+            height:100%;
+         overflow: hidden;  
+           }
+        
+        .logo{ 
+            position: relative;
+            left:50%;
+            transform:translate(-50%,);
+            width:150px;
+            height:150px;
+        }
+        .logo {
+         -webkit-animation: roll-in-left 2s ease-out both;
+                 animation: roll-in-left 2s ease-out both;
+     }
+      
+     /* @-webkit-keyframes roll-in-left {
+         0% {
+           -webkit-transform: translateX(-800px) rotate(-540deg);
+                   transform: translateX(-800px) rotate(-540deg);
+           opacity: 0;
+         }
+         100% {
+           -webkit-transform: translateX(0) rotate(0deg);
+                   transform: translateX(0) rotate(0deg);
+           opacity: 1;
+         }
+       }
+       @keyframes roll-in-left {
+         0% {
+           -webkit-transform: translateX(-800px) rotate(-540deg);
+                   transform: translateX(-800px) rotate(-540deg);
+           opacity: 0;
+         }
+         100% {
+           -webkit-transform: translateX(0) rotate(0deg);
+                   transform: translateX(0) rotate(0deg);
+           opacity: 1;
+         }
+       }*/
+       
+        .buttons{ 
+            display:flex;
+             flex-direction: column;
+         }   
+     
+         button {
+             position: relative;
+             background: #45B649;
+             font-family: inherit;
+             padding: 0.6em 1.3em;
+             font-weight: 900;
+             font-size: 12px;
+             color:#202020;
+             border: 3px solid #202020;
+             border-radius: 0.4em;
+             box-shadow: 0.1em 0.1em;
+             width: 40vw;
+             left: 50%;
+             top:20%;
+             transform:translate(-50%, -50%);
+             
+         }
+         
+         button:hover {
+             background: white;
+             box-shadow: 0.15em 0.15em;
+         }
+         
+         button:active {
+             box-shadow: 0.05em 0.05em;
+         }
+     
+         .scene{ 
+             top:20%;
+             position:absoluteS;
+             top: -520px;
+             z-index:-2;
+         }
+        .city{ 
+             bottom:0px;
+             width:100%;
+             left:0; 
+             position:absolute;
+             object-fit: cover;
+             overflow:hidden;
+         }
+         .bmw{ 
+             z-index: 1;
+             position:absolute;
+             bottom:0PX;
+             width:10rem;
+             height:4.5rem; 
+             animation: car-move 10s linear backwards;
+             z-index: 1;
+         }
+         @keyframes car-move{ 
+             to { 
+                 transform: translate(90vw);
+             }
+         }
+
+      }
+
+      @media only screen and (min-width:601px) and (max-width:1024px)
+      {
+        body {
+          background-color: lightblue;
+        }
+        body{ 
+            background-color: #87CEEB; 
+            height:100%;
+         overflow: hidden;  
+           }
+        
+        .logo{ 
+            position: relative;
+            left:50%;
+            transform:translate(-50%);
+            width:150px;
+            height:150px;
+        }
+        .logo {
+         -webkit-animation: roll-in-left 2s ease-out both;
+                 animation: roll-in-left 2s ease-out both;
+     }
+      
+  /*    @-webkit-keyframes roll-in-left {
+         0% {
+           -webkit-transform: translateX(-800px) rotate(-540deg);
+                   transform: translateX(-800px) rotate(-540deg);
+           opacity: 0;
+         }
+         100% {
+           -webkit-transform: translateX(0) rotate(0deg);
+                   transform: translateX(0) rotate(0deg);
+           opacity: 1;
+         }
+       }
+       @keyframes roll-in-left {
+         0% {
+           -webkit-transform: translateX(-800px) rotate(-540deg);
+                   transform: translateX(-800px) rotate(-540deg);
+           opacity: 0;
+         }
+         100% {
+           -webkit-transform: translateX(0) rotate(0deg);
+                   transform: translateX(0) rotate(0deg);
+           opacity: 1;
+         }
+       }*/
+       
+        .buttons{ 
+            display:flex;
+             flex-direction: column;
+         }   
+     
+         button {
+             position: relative;
+             background: #45B649;
+             font-family: inherit;
+             padding: 0.6em 1.3em;
+             font-weight: 900;
+             font-size: 12px;
+             color:#202020;
+             border: 3px solid #202020;
+             border-radius: 0.4em;
+             box-shadow: 0.1em 0.1em;
+             width: 40vw;
+             left: 50%;
+             top:20%;
+             transform:translate(-50%, -50%);
+             
+         }
+         
+         button:hover {
+             background: white;
+             box-shadow: 0.15em 0.15em;
+         }
+         
+         button:active {
+             box-shadow: 0.05em 0.05em;
+         }
+     
+         .scene{ 
+             top:20%;
+             position:absoluteS;
+             top: -520px;
+             z-index:-2;
+         }
+        .city{ 
+             bottom:0px;
+             width:100%;
+             left:0; 
+             position:absolute;
+             object-fit: cover;
+             overflow:hidden;
+         }
+         .bmw{ 
+             z-index: 1;
+             position:absolute;
+             bottom:-5PX;
+             width:15rem;
+             height:6rem; 
+                animation: car-move 15s linear backwards;
+             z-index: 1;
+         }
+         @keyframes car-move{ 
+             to { 
+                 transform: translate(90vw);
+             }
+         }
+
+      }
+
+      @media only screen and (min-width:1025px) /* and (max-width:1024px)*/
+      {
+        body {
+          background-color: lightblue;
+        }
+        body{ 
+            background-color: #87CEEB; 
+            height:100%;
+         overflow: hidden;  
+           }
+        
+        .logo{ 
+            position: relative;
+            left:50%;
+            transform:translate(-50%);
+            width:150px;
+            height:150px;
+        }
+        .logo {
+         -webkit-animation: roll-in-left 2s ease-out both;
+                 animation: roll-in-left 2s ease-out both;
+     }
+     .buttons{ 
+        display:flex;
+         flex-direction: column;
+     }   
+ 
+     button {
+         position: relative;
+         background: #45B649;
+         font-family: inherit;
+         padding: 0.6em 1.3em;
+         font-weight: 900;
+         font-size: 12px;
+         color:#202020;
+         border: 3px solid #202020;
+         border-radius: 0.4em;
+         box-shadow: 0.1em 0.1em;
+         width: 40vw;
+         left: 50%;
+         top:20%;
+         transform:translate(-50%, -50%);
+         
+     }
+     
+     button:hover {
+         background: white;
+         box-shadow: 0.15em 0.15em;
+     }
+     
+     button:active {
+         box-shadow: 0.05em 0.05em;
+     }
+ 
+     .scene{ 
+         top:20%;
+         position:absoluteS;
+         top: -520px;
+         z-index:-2;
+     }
+    .city{ 
+         bottom:0px;
+         width:100%;
+         left:0; 
+         position:absolute;
+         object-fit: cover;
+         overflow:hidden;
+     }
+     .bmw{ 
+         z-index: 1;
+         position:absolute;
+         bottom:-5PX;
+         width:20rem;
+         height:8rem; 
+            animation: car-move 15s linear backwards;
+         z-index: 1;
+     }
+     @keyframes car-move{ 
+         to { 
+             transform: translate(90vw);
+         }
+     }
+
+  }
